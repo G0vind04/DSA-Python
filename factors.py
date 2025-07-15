@@ -20,4 +20,15 @@ for i in range(1,num1//2+1):
 result1.append(num)
 print(result1)
 
-
+#optimal solution
+#time complexity 0(nlogn)+0(sqrt)n))
+from math import sqrt
+num2=int(input("enter the number"))
+result2=[]
+for i in range(1,int(sqrt(num2))+1):
+    if num%i==0:
+        result2.append(i)
+        if num//i!=i:
+            result2.append(num//i)
+result2.sort()
+print(result2)
