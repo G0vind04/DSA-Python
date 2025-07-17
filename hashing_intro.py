@@ -26,3 +26,14 @@ for k in m1:
         print(0)
     else:
         print(k,"=",hash_list[k])
+        
+        
+#--------------using dictionary-------------
+
+n2=[5,3,2,2,1,5,5,7,5,10]
+m2=[10,11,1,9,5,67,2]
+hash_map={}
+for j in range(len(n2)):
+    hash_map[n2[j]]=hash_map.get(n2[j],0)+1
+for l in range(len(m2)):
+    print(f"{l}={hash_map.get(k,0)}")
